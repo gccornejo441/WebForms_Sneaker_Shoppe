@@ -15,7 +15,7 @@
                     <td style="vertical-align: top; text-align:left;">
                         <b>Description:</b><br /><%#: Item.Description %>
                         <br />
-                        <span><b />Price:</span>&nbps;<%#: String.Format("{0:c}", Item.UnitPrice) %>></span>
+                        <span><b />Price:</span>&nbsp;<%#: String.Format("{0:c}", Item.UnitPrice) %></span>
                         <br />
                         <span><b>Sneaker Number:</b>&nbsp;<%#:Item.SneakerID %></span>
                         <br />

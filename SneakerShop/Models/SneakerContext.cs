@@ -13,6 +13,8 @@ namespace SneakerShop.Models
 
         }
 
+        public DbSet<Shirt> Shirts { get; set; }
+
         public DbSet<Sneaker> Sneakers { get; set; }
         public DbSet<Category> Categories { get; set; }
 

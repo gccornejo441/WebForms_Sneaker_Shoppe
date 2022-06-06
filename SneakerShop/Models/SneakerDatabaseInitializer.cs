@@ -12,6 +12,23 @@ namespace SneakerShop.Models
         {
             GetSneakers().ForEach(c => context.Sneakers.Add(c));
             GetCategories().ForEach(c => context.Categories.Add(c));
+            GetShirts().ForEach(c => context.Shirts.Add(c));
+        }
+
+        private static List<Shirt> GetShirts()
+        {
+            var shirts = new List<Shirt>
+            {
+                new Shirt
+                {
+                    ShirtID = 1,
+                    ShirtName = "Mock 1",
+                    ShirtImageUrl = "Mock-1.jpg",
+                    ShirtPrice = 59.99,
+                    Description = "This is a mock t-shirt"
+                }
+            };
+            return shirts;
         }
 
        private static List<Category> GetCategories()

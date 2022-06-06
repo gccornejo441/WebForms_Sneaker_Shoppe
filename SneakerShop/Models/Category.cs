@@ -15,5 +15,6 @@ namespace SneakerShop.Models
         [Display(Name = "Sneaker Description")]
         public string Description { get; set; }
         public virtual ICollection<Sneaker> Sneakers { get; set; }
+        public virtual ICollection<Shirt> Shirts { get; set; }
     }
 }

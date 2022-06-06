@@ -53,7 +53,6 @@
                                 <td>&nbsp;</td>
                             </tr>
                         </table>
-                        </p>
                     </td>
                 </ItemTemplate>
                 <LayoutTemplate>

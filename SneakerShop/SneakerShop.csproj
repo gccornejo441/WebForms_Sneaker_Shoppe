@@ -219,6 +219,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="ShirtList.aspx" />
     <Content Include="Site.Master" />
     <Content Include="SneakerDetails.aspx" />
     <Content Include="SneakerList.aspx" />
@@ -363,11 +364,18 @@
     </Compile>
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Shirt.cs" />
     <Compile Include="Models\Sneaker.cs" />
     <Compile Include="Models\SneakerContext.cs" />
     <Compile Include="Models\SneakerDatabaseInitializer.cs" />
-    <Compile Include="Models\UniversityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShirtList.aspx.cs">
+      <DependentUpon>ShirtList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShirtList.aspx.designer.cs">
+      <DependentUpon>ShirtList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
