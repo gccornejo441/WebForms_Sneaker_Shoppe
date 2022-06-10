@@ -27,5 +27,15 @@ namespace SneakerShop
             return query;
         }
 
+        public IQueryable<Shirt> GetShirts([QueryString("id")] int? categoryId)
+        {
+            var _db = new SneakerShop.Models.SneakerContext();
+            IQueryable<Shirt> query = _db.Shirts;
+            if (categoryId.HasValue && categoryId > 0)
+            {
+                query = query.Where(p => p.CategoryID ==)
+            }
+        }
+
     }
 }
