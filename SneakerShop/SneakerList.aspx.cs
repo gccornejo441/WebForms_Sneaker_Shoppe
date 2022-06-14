@@ -18,7 +18,13 @@ namespace SneakerShop
 
         IQueryable<Sneaker> GetSneakers([QueryString("id")] int? categoryId)
         {
-            var query = Models.SneakerContext.S
+            var _db = new SneakerShop.Models.SneakerContext();
+            IQueryable<Sneaker> query = _db.Sneakers;
+                if (categoryId.HasValue && categoryId > 0)
+            {
+                query = query.Where(q => q.CategoryID == categoryId);
+            }
+            return query;
         }
     }
 }
